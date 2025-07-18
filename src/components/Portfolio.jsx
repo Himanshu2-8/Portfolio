@@ -55,7 +55,8 @@ const Portfolio = () => {
         "Google Maps API for dynamic location mapping",
         "UploadThing for image uploads",
         "Responsive UI with custom React components"
-      ]
+      ],
+      link:"https://github.com/Himanshu2-8/Journeys"
     },
     {
       title: "OncoScan",
@@ -67,7 +68,8 @@ const Portfolio = () => {
         "Interactive real-time prediction interface",
         "Comprehensive EDA and feature scaling",
         "Model serialization for deployment"
-      ]
+      ],
+      link:"https://cancer-predictor-himanshu28.streamlit.app/"
     }
   ];
 
@@ -189,9 +191,8 @@ const Portfolio = () => {
             className="flex justify-center gap-6"
           >
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Code, href: "#", label: "LeetCode" },
-              { icon: Award, href: "#", label: "HackerRank" }
+              { icon: Github, href: "https://github.com/Himanshu2-8", label: "GitHub" },
+              { icon: Code, href: "https://leetcode.com/u/Himanshu_2809/#", label: "LeetCode" },
             ].map((social, index) => (
               <motion.a
                 key={index}
@@ -390,6 +391,7 @@ const Portfolio = () => {
                   className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={()=>window.open(project.link, "_blank")}
                 >
                   <ExternalLink className="w-4 h-4" />
                   View Project
