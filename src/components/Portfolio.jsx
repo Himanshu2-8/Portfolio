@@ -406,7 +406,7 @@ const Portfolio = () => {
       <section ref={achievementsRef} className="py-20 px-4 bg-black/20">
         <div className="max-w-6xl mx-auto">
           <motion.h2 
-            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-4000 bg-clip-text text-transparent"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
